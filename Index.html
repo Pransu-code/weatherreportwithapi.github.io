@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet">
+    <title>Weather summary</title>
+</head>
+
+<body>
+
+    <div class="main-menu">
+        <section class="image">
+            <div class="menu-item0"><img src="cloud.png" height="30" width="30"></div>
+        </section>
+        <section class="home">
+            <div class="menu-item1"><i class='bx bx-home'></i>Home</div>
+        </section>
+        <section class="category">
+            <div class="menu-item2"><i class='bx bx-grid-alt'></i>Category</div>
+
+        </section>
+        <section class="setting">
+            <div class="menu-item3"><i class='bx bx-cog'></i>Setting</div>
+
+        </section>
+
+    </div>
+
+    <div class="container2">
+        <section class="header">
+            <div class="header1">
+
+                <h3><b>Weather Forecast</b></h3>
+               
+                <form id="search-form" class="example" action="/action_page.php" style="margin:auto;max-width:200px">
+                    <input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" id="search-input" required autocomplete="off"/>
+                   
+                   <div class="searchbutton">
+                    <button id="search-button">Search</button>
+                   </div>
+                </form>
+
+
+            </div>
+            <div class="header2">
+                <p class="date"><span id="datetime"></span></p>
+            </div>
+
+        </section>
+        <div class="location">
+            <img src="location.png">
+        </div>
+
+        <section class="sub-header">
+            <nav>
+
+                <div class="nav-links" id="navlinks">
+
+                    <ul>
+                        <li><a><b>Today</b></a></li>
+                        <li><a><b>Week</b></a></li>
+
+
+                        <li><i><a> <b> &deg;C &deg;F </b></a></i></li>
+
+                    </ul>
+                </div>
+
+            </nav>
+            <section class="body">
+
+                <div class="row">
+
+                    <div class="body-col1">
+                        <div class="layer">
+                            <h3>sunday</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="body-col2">
+                        <div class="layer">
+                            <h3>Monday</h3>
+                        </div>
+                    </div>
+
+                    <div class="body-col3">
+                        <div class="layer">
+                            <h3>Tuesday</h3>
+                        </div>
+                    </div>
+
+                    <div class="body-col4">
+                        <div class="layer">
+                            <h3>Wednesday</h3>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </section>
+            <section class="footer">
+                <div class="footertext">
+                    <h4><b>Today's Highlights</b></h4>
+                </div>
+                <div class="footerbox1">
+                    <div class="layer1">
+                        <h4><b> Sunrise & Sunset</b> </h4>
+                    </div>
+                </div>
+                <div class="footerbox2">
+                    <div class="layer1">
+                        <h4> <b>Temp. Graph </b></h4>
+                    </div>
+                </div>
+
+
+            </section>
+
+        </section>
+
+
+
+    </div>
+
+
+    <section class="rightside">
+        <div class="righticons">
+            <ul>
+                <li><i class='bx bx-message-detail'></i></li>
+                <li><i class='bx bx-bell'></i></li>
+                <li><i class='bx bx-user-circle'></i></li>
+            </ul>
+
+        </div>
+
+        <div class="calender">
+            <img src="calender.png">
+        </div>
+
+        <div class="subscribe">
+            <ul>
+                <li><i class='bx bx-paper-plane'></i></li>
+                <li>
+                    <h4><b> Subscribe to our newsletter</b> </h4>
+                </li>
+            </ul>
+
+
+        </div>
+
+        <div class="mobile">
+            <div class="playstore">
+                <h4><b> <i class='bx bxl-play-store'></i> Get our weather app on your Devices! </b></h4>
+
+            </div>
+            <div class="mobileimg">
+                <img src="mobile.png" style="height: 150px">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js">
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+    </script>
+</body>
+
+</html>
